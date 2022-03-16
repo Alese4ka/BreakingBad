@@ -1,6 +1,7 @@
-/*import React from 'react';
+import React from 'react';
+import style from "./styles.module.scss";
 
-const cards = [
+/*const cards = [
   {
     id: uuid4(),
     name: "Walter White",
@@ -38,9 +39,6 @@ const cards = [
   },
 ];*/
 
-
-import style from "./styles.module.scss"
-
 const Component = (props) => {
   return (
     <h1>
@@ -49,10 +47,21 @@ const Component = (props) => {
         <button class={style.catalog}>Каталог</button>
       </header>
       <main>
-
+        <button class={style.return}>Назад в каталог</button>
+        <div class={style.description}>
+          <div class={style.img}></div>
+          <div class={style.info}>
+            <div class={style.state}>живой</div>
+            <h2>Андрей Панасюк</h2>
+            <p class={style.text}><span>Дата рождения:</span> 23.11.2001</p>
+            <p class={style.text}><span>Ник-нейм:</span> Андрей-завоеватель</p>
+            <p class={style.quote}><span>Цитата:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, aliquam laoreet vivamus sed. Diam fames mi, quam tellus cursus volutpat velit massa.</p>
+          </div>
+        </div>
       </main>
       <footer>
-
+        <p>2022</p>
+        <p>@Alesya</p>
       </footer>
     </h1>
   );

@@ -1,11 +1,101 @@
-header {
-  color: grey;
-  .logo {
-    background: url("/assets/icons/logo.svg") no-repeat left;
-    width: 5rem;
-    height: 5rem;
-  }
-  .catalog {
-    border: none;
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+:root {
+  --font-color: #2d2d2d;
+  --font-span-color: #a9a9a9;
+  --btn-color: #f1b926;
+  --state-color: rgba(48, 255, 30, 0.2);
+  --state-font-color: rgba(81, 226, 69, 1);
+}
+@mixin flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@mixin button {
+  border: none;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 90rem;
+  margin: 0 7.4375rem;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: var(--font-color);
+  h1 {
+    font-size: 1rem;
+    header {
+      margin-bottom: 2.5rem;
+      @include flex;
+      .logo {
+        background: url("/assets/icons/logo.svg") no-repeat left;
+        width: 5rem;
+        height: 5rem;
+      }
+      .catalog {
+        @include button;
+        background: url("/assets/icons/burger.svg") no-repeat left;
+        background-position-x: 1rem;
+        padding: 0.5rem 1rem 0.5rem 3rem;
+        border: 0.0875rem solid var(--btn-color);
+        border-radius: 0.25rem;
+      }
+    }
+    main {
+      margin-bottom: 10.4375rem;
+      .return {
+        @include button;
+        background: url("/assets/icons/arrow.svg") no-repeat left;
+        padding: 0.5rem 1rem 0.5rem 2rem;
+        margin-bottom: 3rem;
+      }
+      .description {
+        @include flex;
+        align-items: flex-start;
+      }
+      .img {
+        background: url("/assets/images/person.png") no-repeat left;
+        width: 26.5rem;
+        height: 36.5625rem;
+        flex: 50%;
+      }
+      .info {
+        flex: 50%;
+        margin-left: 6.4375rem;
+        .state {
+          background: var(--state-color);
+          color: var(--state-font-color);
+          text-align: center;
+          padding: 0.25rem 0;
+          width: 4.0625rem;
+          font-size: 0.75rem;
+          margin-bottom: 2rem;
+        }
+        h2 {
+          font-size: 2rem;
+          font-weight: 500;
+          line-height: 2.5rem;
+          margin-bottom: 1rem;
+        }
+        .text {
+          margin-bottom: 1rem;
+          span {
+            color: var(--font-span-color);
+          }
+        }
+        .quote {
+          margin-top: 2rem;
+          span {
+            color: var(--font-span-color);
+          }
+        }
+      }
+    }
+    footer {
+      @include flex;
+    }
   }
 }
