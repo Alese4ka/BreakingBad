@@ -1,3 +1,5 @@
+/*import React from 'react';
+
 const cards = [
   {
     id: uuid4(),
@@ -34,4 +36,25 @@ const cards = [
     img: "https://vignette.wikia.nocookie.net/breakingbad/images/b/b7/HankS5.jpg/revision/latest/scale-to-width-down/700?cb=20120620014136",
     status: "Deceased",
   },
-];
+];*/
+
+
+import style from "./styles.module.scss"
+
+const Component = (props) => {
+  return (
+    <h1>
+      <header>
+        <div class={style.logo}></div>
+        <button class={style.catalog}>Каталог</button>
+      </header>
+      <main>
+
+      </main>
+      <footer>
+
+      </footer>
+    </h1>
+  );
+}
+export default Component

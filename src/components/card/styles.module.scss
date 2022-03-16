@@ -1,0 +1,11 @@
+header {
+  color: grey;
+  .logo {
+    background: url("/assets/icons/logo.svg") no-repeat left;
+    width: 5rem;
+    height: 5rem;
+  }
+  .catalog {
+    border: none;
+  }
+}
