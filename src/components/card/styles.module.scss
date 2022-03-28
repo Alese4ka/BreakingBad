@@ -2,7 +2,7 @@
 
 .card {
   @include flex;
-  margin-top: 1rem;
+  margin: 1rem;
   max-width: 23.6875rem;
   box-shadow: 0rem 0.25rem 0.5rem $box-shadow;
   border-radius: 0.25rem;
@@ -17,7 +17,8 @@
       color: $state-font-color;
       padding: 0.2rem 0.5rem;
       font-size: 0.75rem;
-      margin: 1rem 10rem 0.75rem 0;
+      margin: 1rem 0 0.75rem 0;
+      display: inline-block;
     }
     .text {
       font-size: 0.75rem;
