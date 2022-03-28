@@ -1,9 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import "/src/assets/styles/reset.scss";
+@import "/src/assets/styles/mixins.scss";
 
-:root {
-  --font-color: #2d2d2d;
-  --font-span-color: #a9a9a9;
-  --btn-color: #f1b926;
-  --state-color: rgba(48, 255, 30, 0.2);
-  --state-font-color: rgba(81, 226, 69, 1);
+$font-color: #2d2d2d;
+$font-span-color: #a9a9a9;
+$btn-color: #f1b926;
+$state-color: rgba(48, 255, 30, 0.2);
+$state-font-color: rgba(81, 226, 69, 1);
+$box-shadow: rgba(0, 0, 0, 0.1);
+
+body {
+  max-width: 90rem;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: $font-color;
 }

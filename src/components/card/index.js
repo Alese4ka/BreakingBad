@@ -1,5 +1,6 @@
 import React from 'react';
 import style from "./styles.module.scss";
+import person_card from "./../../assets/images/person_card.png";
 
 /*const cards = [
   {
@@ -39,18 +40,16 @@ import style from "./styles.module.scss";
   },
 ];*/
 
-const Component = (props) => {
+const Card = (props) => {
   return (
-    <h1>
-        <div class={style.description}>
-          <div class={style.img}></div>
-          <div class={style.info}>
-            <div class={style.state}>живой</div>
-            <h2>Андрей Панасюк</h2>
-            <p class={style.text}><span>23.11.2001</span> </p>
-          </div>
-        </div>
-    </h1>
+    <div class={style.card}>
+      <img class={style.img} src={person_card} alt="person"/>
+      <div class={style.info}>
+        <div class={style.state}>живой</div>
+        <div class={style.name}>Андрей Панасюк</div>
+        <p class={style.text}><span>23.11.2001</span></p>
+      </div>
+    </div>
   );
 }
-export default Component
+export default Card

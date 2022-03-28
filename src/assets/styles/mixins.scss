@@ -1,9 +1,4 @@
 @mixin flex {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@mixin button {
-  border: none;
-  box-sizing: border-box;
+  align-items: flex-start;
 }
