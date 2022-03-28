@@ -1,0 +1,30 @@
+@import "/src/assets/styles/main.scss";
+
+.card {
+  @include flex;
+  margin: 1rem;
+  max-width: 23.6875rem;
+  box-shadow: 0rem 0.25rem 0.5rem $box-shadow;
+  border-radius: 0.25rem;
+  .img {
+    width: 7.75rem;
+    height: 7.75rem;
+  }
+  .info {
+    margin: 0 1.5rem;
+    .state {
+      background: $state-color;
+      color: $state-font-color;
+      padding: 0.2rem 0.5rem;
+      font-size: 0.75rem;
+      margin: 1rem 0 0.75rem 0;
+      display: inline-block;
+    }
+    .text {
+      font-size: 0.75rem;
+      span {
+        color: $font-span-color;
+      }
+    }
+  }
+}
