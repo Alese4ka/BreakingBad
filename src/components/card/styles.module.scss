@@ -6,8 +6,9 @@
   max-width: 23.6875rem;
   box-shadow: 0rem 0.25rem 0.5rem $box-shadow;
   border-radius: 0.25rem;
+  width: 19rem;
   .img {
-    width: 7.75rem;
+    max-width: 7.75rem;
     height: 7.75rem;
   }
   .info {
